@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Timber test</title>
+        {{ wp_head }}
+    </head>
+    <body>
+        {% include 'partial/header.twig' %}
+
+        <h1>{{ post.custom.home_page_header_text}}</h1>
+        <img src="{{ Image(post.custom.home_page_header_image).src }}" alt="" />
+        {{ wp_footer }}
+    </body>
+</html>

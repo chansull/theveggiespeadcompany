@@ -1,0 +1,10 @@
+body {
+    background-color: light-grey;
+    max-width:1080px;
+    margin: 0 auto;
+}
+
+.header-image {
+    max-width:100%;
+    margin: 0 auto;
+}
