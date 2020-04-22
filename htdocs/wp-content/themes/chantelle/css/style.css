@@ -4,7 +4,171 @@ body {
     margin: 0 auto;
 }
 
-.header-image {
-    max-width:100%;
+/*header-image {
+    width:1080px;
+    height: 400px;
     margin: 0 auto;
+} */
+
+.hero-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-attachment: fixed;
+
+
+}
+/* Centered text */
+.tagline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.hero-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, .2);
+}
+
+.header-image {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+
+
+.sitename {
+    justify-content: center;
+}
+
+nav {
+    100vw;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    font-size: 3vh
+
+
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    text-decoration: none;
+    border: 1px solid black;
+    margin:0.5em;
+    padding: 0.5em;
+}
+
+nav {
+    text-decoration: none;
+}
+
+.hello {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    letter-spacing: 0.5em;
+}
+
+.tagline {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1em;
+    size: 20px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    z-index: 4;
+}
+
+
+/*change the layout of the navigation bar for all the screens
+that have a width less or equal than 500px*/``
+@media only screen and (max-width: 500px) {
+  /*shows elements in a column*/
+  ul{
+    flex-direction: column;
+  }
+
+  /* deletes margin on top or bottom of the a tag*/
+  li{
+    margin: 0;
+  }
+ /* makes sure that the a tag will take the entire screen*/
+  a{
+    display: block;
+  }
+}
+
+.products-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+h2 {
+
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1em;
+    size: 30px;
+    color: green;
+}
+
+
+h4 {
+    text-align: center;
+    border: 2px solid lightgray;
+    border-radius: 2.5rem;
+    padding: 0.3rem;
+}
+
+.parallax {
+    background-image: url(/wp-content/uploads/images/jars-two.jpg);
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+
+}
+
+.container {
+    background-image: url(/wp-content/uploads/images/spreadfour.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height:400px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 .best-sells {
+    font-family: helvetica;
+    font-size: 6rem;
+
 }

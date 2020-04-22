@@ -1,0 +1,68 @@
+{% extends 'base.twig' %}
+
+{% block main %}
+<h1 class="hello">{{ post.custom.home_page_header_text}}</h1>
+
+    {{ post.custom.home_page_header_description}}
+    <img src="{{ image.src | resize(500) }}" alt="{{ image.alt }}" />
+
+
+
+
+{% include 'partial/header.twig' %}
+
+<div class="hero-container">
+    <img src="/wp-content/uploads/images/spreadfour.jpg" alt="jar" style="width:100%; height: 400px;">
+        <h2 class="tagline"> &diams;Vegan Sandwich Spread&diams;</h2>
+</div>
+
+
+{#    <img class="header-image" src="{{ Image(post.custom.home_page_header_image).src }}" alt="" /> theres no current picture in WP - custom fields#}
+
+<div class="products">
+    <h2>Products</h2>
+
+
+        <div class="products-wrapper">
+            <div class="product-one">
+                <h4>Superfood Spread</h4>
+                <a href="#products">
+                    <img src="/wp-content/uploads/images/spreadone.jpg" width="250px" height="200px" </>
+                </a>
+            </div>
+
+            <div class="product-two">
+                <h4>Spicy Spreads</h4>
+                <a href="#products">
+                    <img src="/wp-content/uploads/images/spreadtwo.jpg" width="250px" height="200px" </>
+                </a>
+            </div>
+
+            <div class="product-three">
+                <h4>Gluten Free Spreads</h4>
+                <a href="#products">
+                    <img src="/wp-content/uploads/images/spreadthree.jpg" width="250px" height="200px" </>
+                </a>
+            </div>
+
+            <div class="product-four">
+                <h4>Creamy Spreads</h4>
+                <a href="#products">
+                    <img src="/wp-content/uploads/images/spreadfour.jpg" width="250px" height="200px" </>
+                </a>
+            </div>
+
+        </div> <!--products-wrapper -->
+</div> <!--products -->
+
+<div class="parallax"> </div>
+
+</br>
+
+<div class="container">
+    <h1 class="best-sells"> BEST SELLERS </h1>
+        <div class="color-overlay"></div>
+</div>
+
+
+{% endblock %}

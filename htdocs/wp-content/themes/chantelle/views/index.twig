@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Timber test</title>
-        {{ wp_head }}
-    </head>
-    <body>
-        {% include 'partial/header.twig' %}
+{% extends 'base.twig' %}
 
-        <h1>{{ post.custom.home_page_header_text}}</h1>
-        <img src="{{ Image(post.custom.home_page_header_image).src }}" alt="" />
-        {{ wp_footer }}
-    </body>
-</html>
+{% block header %}{% endblock %}
+
+{% block main %}
+    <div class="content">{{ content }}</div>
+{% endblock %}
+<p>hello</p>
