@@ -1,15 +1,15 @@
 {% extends 'base.twig' %}
 
 {% block main %}
-<h1 class="hello">{{ post.custom.home_page_header_text}}</h1>
-
-    {{ post.custom.home_page_header_description}}
-    <img src="{{ image.src | resize(500) }}" alt="{{ image.alt }}" />
 
 
 
 
-{% include 'partial/header.twig' %}
+        <div class="header-slices"><img src="{{ image.src | resize(1080, 400) }}" alt="{{ image.alt }}"/></div>
+        
+
+
+
 
 <div class="hero-container">
     <img src="/wp-content/uploads/images/spreadfour.jpg" alt="jar" style="width:100%; height: 400px;">
@@ -17,7 +17,7 @@
 </div>
 
 
-{#    <img class="header-image" src="{{ Image(post.custom.home_page_header_image).src }}" alt="" /> theres no current picture in WP - custom fields#}
+
 
 <div class="products">
     <h2>Products</h2>

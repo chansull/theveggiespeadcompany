@@ -1,7 +1,19 @@
 {% extends 'base.twig' %}
 
-{% block main %}About us
+{% block main %}
+    <h1 class="about-heading">{{ about_heading}}</h1>
 
+    <div class="about-content">{{ about_content}}</div>
+
+
+<div class="about-gallery">
+    <div class="gallery-about-image"><img src="{{image}}"/></div>
+    <h4 class="about-lines">Locally sourced ingredients</h4>
+    <div class="gallery-about-image"><img src="{{image_two}}"/></div>
+    <h4 class="about-lines">Freshly handmade jars</h4>
+    <div class="gallery-about-image"><img src="{{image_three}}"/></div>
+    <h4 class="about-lines">Six unique receipes</h4>
+</div> {#about-gallery#}
 
 
 

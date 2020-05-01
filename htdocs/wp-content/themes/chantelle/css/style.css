@@ -44,17 +44,18 @@ body {
     width: 100%;
 }
 
+.header-slices {
+background-position: top;
+}
+
 
 .sitename {
     justify-content: center;
 }
 
-nav {
-    100vw;
 
-}
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -63,7 +64,7 @@ ul {
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
-    font-size: 3vh
+    font-size: 25px;
 
 
 }
@@ -72,7 +73,7 @@ a {
     color: black;
 }
 
-ul li {
+nav ul li {
     text-decoration: none;
     border: 1px solid black;
     margin:0.5em;
@@ -171,4 +172,99 @@ h1 .best-sells {
     font-family: helvetica;
     font-size: 6rem;
 
+}
+
+/* About page */
+
+.about-heading {
+    color: powderblue;
+    font-size: 50px;
+    text-align: center;
+}
+
+.about-content {
+    font-family: sans-serif;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid salmon;
+    border-radius: 25px;
+
+}
+
+.about-text {
+    color:darkslategray;
+}
+.aligncenter wp-image-68 size-large {
+    max-width: 100%;
+}
+
+.about-gallery {
+    display: flex;
+    flex-flow: row no-wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about-gallery .gallery-about-image {
+    justify-content: space-between;
+}
+
+.about-gallery-titles {
+    display: flex;
+    flex-flow: row no-wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-gallery-titles h4 {
+    text-align: left;
+}
+
+.about-lines {
+    display: block;
+}
+
+/*contact*/
+
+.contact-header {
+    background-color: lightgray;
+
+}
+
+.contact-text {
+    color: white;
+    font-size: 25px;
+}
+
+.gform_fields { 
+    flex-wrap: wrap; 
+    flex-wrap: wrap;
+}
+
+.gfield {
+    width: 100%;
+}
+
+.gform_description {
+    display: none;
+}
+
+#gform_fields_1 {
+    list-style-type: none;
+
+}
+
+.gform_wrapper {
+    align-items: center;
+
+}
+.gform_fields top_label form_sublabel_below description_below {
+    list-style-type:none;
+}
+/*product page */
+
+.spread-product-gallery {
+    padding:20px;
 }
