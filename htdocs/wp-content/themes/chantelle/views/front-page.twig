@@ -2,67 +2,94 @@
 
 {% block main %}
 
+    <div class="header-slices"><img src="{{ image.src | resize(1080, 400) }}" alt="{{ image.alt }}"/></div>
 
 
-
-        <div class="header-slices"><img src="{{ image.src | resize(1080, 400) }}" alt="{{ image.alt }}"/></div>
-        
-
-
-
-
-<div class="hero-container">
-    <img src="/wp-content/uploads/images/spreadfour.jpg" alt="jar" style="width:100%; height: 400px;">
-        <h2 class="tagline"> &diams;Vegan Sandwich Spread&diams;</h2>
-</div>
+    <div class="hero-container">
+        <img src="/wp-content/uploads/images/spreadfour.jpg" alt="jar" style="width:100%; height: 400px;">
+            <h2 class="tagline"> &diams;Vegan Sandwich Spread&diams;</h2>
+    </div>
 
 
+    <div class="products">
+        <h2>Products</h2>
+            <div class="products-wrapper">
+                <div class="product-one">
+                    <h4>Superfood Spread</h4>
+                    <a href="#products">
+                        <img src="/wp-content/uploads/images/spreadone.jpg" width="250px" height="200px" </>
+                    </a>
+                </div>
 
+                <div class="product-two">
+                    <h4>Spicy Spreads</h4>
+                    <a href="#products">
+                        <img src="/wp-content/uploads/images/spreadtwo.jpg" width="250px" height="200px" </>
+                    </a>
+                </div>
 
-<div class="products">
-    <h2>Products</h2>
+                <div class="product-three">
+                    <h4>Gluten Free Spreads</h4>
+                    <a href="#products">
+                        <img src="/wp-content/uploads/images/spreadthree.jpg" width="250px" height="200px" </>
+                    </a>
+                </div>
 
+                <div class="product-four">
+                    <h4>Creamy Spreads</h4>
+                    <a href="#products">
+                        <img src="/wp-content/uploads/images/spreadfour.jpg" width="250px" height="200px" </>
+                    </a>
+                </div>
 
-        <div class="products-wrapper">
-            <div class="product-one">
-                <h4>Superfood Spread</h4>
-                <a href="#products">
-                    <img src="/wp-content/uploads/images/spreadone.jpg" width="250px" height="200px" </>
-                </a>
-            </div>
+            </div> <!--products-wrapper -->
+    </div> <!--products -->
 
-            <div class="product-two">
-                <h4>Spicy Spreads</h4>
-                <a href="#products">
-                    <img src="/wp-content/uploads/images/spreadtwo.jpg" width="250px" height="200px" </>
-                </a>
-            </div>
+    <div class="parallax"> </div>
 
-            <div class="product-three">
-                <h4>Gluten Free Spreads</h4>
-                <a href="#products">
-                    <img src="/wp-content/uploads/images/spreadthree.jpg" width="250px" height="200px" </>
-                </a>
-            </div>
+        </br>
 
-            <div class="product-four">
-                <h4>Creamy Spreads</h4>
-                <a href="#products">
-                    <img src="/wp-content/uploads/images/spreadfour.jpg" width="250px" height="200px" </>
-                </a>
-            </div>
+    <div class="container">
+        <h1 class="best-sells"> BEST SELLERS </h1>
+            <div class="color-overlay"></div>
+    </div>
 
-        </div> <!--products-wrapper -->
-</div> <!--products -->
+    <div class="gallery-flavours-container">
+        <div class="gallery-flavours">
+            <a target="_blank" href="/wp-content/uploads/images/spreadone.jpg">
+                <img src="/wp-content/uploads/images/spreadone.jpg" alt="superfood spread" width="250" height="200">
+            </a>
+        <div class="desc">Chickpea and Chive</div>
+        </div>
 
-<div class="parallax"> </div>
+        <div class="gallery-flavours">
+            <a target="_blank" href="/wp-content/uploads/images/spreadone.jpg">
+                <img src="/wp-content/uploads/images/spreadone.jpg" alt="spicy spread" width="250" height="200">
+            </a>
+            <div class="desc">Aubergine and Mushroom</div>
+        </div>
 
-</br>
+        <div class="gallery-flavours">
+          <a target="_blank" href="/wp-content/uploads/images/spreadone.jpg">
+            <img src="/wp-content/uploads/images/spreadone.jpg" alt="creamy spread" width="250" height="200">
+          </a>
+          <div class="desc">Walnut and lentil</div>
+        </div>
 
-<div class="container">
-    <h1 class="best-sells"> BEST SELLERS </h1>
-        <div class="color-overlay"></div>
-</div>
+        <div class="gallery-flavours">
+          <a target="_blank" href="/wp-content/uploads/images/spreadone.jpg">
+            <img src="/wp-content/uploads/images/spreadone.jpg" alt="Gluten free spread" width="250" height="200">
+          </a>
+          <div class="desc">Red Pepper and Tomato</div>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="new-recipes">New Recipes Coming Soon</h1>
+    </div>
+
+    <br>
+
 
 
 {% endblock %}

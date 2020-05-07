@@ -9,7 +9,7 @@ body {
     height: 400px;
     margin: 0 auto;
 } */
-
+/* Front page */
 .hero-container {
   position: relative;
   text-align: center;
@@ -142,6 +142,8 @@ h4 {
     border: 2px solid lightgray;
     border-radius: 2.5rem;
     padding: 0.3rem;
+    font-family: Quicksand;
+
 }
 
 .parallax {
@@ -174,6 +176,44 @@ h1 .best-sells {
 
 }
 
+.new-recipes {
+    text-align: center;
+    background-color: darksalmon;
+    color: white;
+    font-family: Quicksand;
+}
+
+div.gallery-flavours-container {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 1080px;
+
+
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  padding-top: 5px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: monospace;
+}
 /* About page */
 
 .about-heading {
@@ -193,7 +233,9 @@ h1 .best-sells {
 }
 
 .about-text {
-    color:darkslategray;
+    color:white;
+    font-family: Quicksand;
+    background-color: lightgray;
 }
 .aligncenter wp-image-68 size-large {
     max-width: 100%;
@@ -224,6 +266,7 @@ h1 .best-sells {
 
 .about-lines {
     display: block;
+
 }
 
 /*contact*/
@@ -251,10 +294,34 @@ h1 .best-sells {
     display: none;
 }
 
+.gform_body {
+    width:100%;
+}
+#input_1_3, #input_1_5 {
+    width:100%;
+}
+
+
+
 #gform_fields_1 {
     list-style-type: none;
 
 }
+
+#input_1_7 {
+    width:50%;
+}
+
+.charleft {
+    color: powderblue;
+}
+
+.gform_button {
+    margin-left: 38px;
+    color: darksalmon;
+    font-size: 55px;
+}
+
 
 .gform_wrapper {
     align-items: center;
@@ -262,9 +329,47 @@ h1 .best-sells {
 }
 .gform_fields top_label form_sublabel_below description_below {
     list-style-type:none;
+    width:100%;
+}
+
+.gform_body {
+    align-items: center;
+}
+
+.gform_title {
+    margin-left:39px;
+}
+
+.gfield_label {
+    color: powderblue;
+    font-weight: bold;
+    padding-bottom: 5px;
 }
 /*product page */
 
 .spread-product-gallery {
     padding:20px;
+}
+
+
+/*footer */
+
+.footer-container {
+    background-color: lightgray;
+    height:200px;
+    position: relative;
+}
+
+.footer {
+    border: 3px solid white;
+    padding: 7px;
+    position: absolute;
+    left: 450px;
+    top:100px;
+
+
+
+
+
+
 }
