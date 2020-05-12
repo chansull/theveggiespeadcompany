@@ -1,6 +1,14 @@
 body {
     background-color: light-grey;
-    max-width:1080px;
+    width:100%;
+
+}
+
+
+
+.inner {
+    width: 1080px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -68,7 +76,7 @@ nav ul {
 
 
 }
-a {
+.active {
     text-decoration: none;
     color: black;
 }
@@ -173,7 +181,13 @@ h4 {
 h1 .best-sells {
     font-family: helvetica;
     font-size: 6rem;
+    color: white;
 
+}
+
+.bestseller-link {
+    color: white;
+    text-decoration: none;
 }
 
 .new-recipes {
@@ -186,8 +200,9 @@ h1 .best-sells {
 div.gallery-flavours-container {
 display: flex;
 flex-direction: row;
-justify-content: space-between;
-width: 1080px;
+justify-content: space-evenly;
+/*width: 1080px; */
+padding-top: 50px;
 
 
 }
@@ -348,7 +363,8 @@ div.desc {
 /*product page */
 
 .spread-product-gallery {
-    padding:20px;
+
+
 }
 
 
@@ -361,15 +377,21 @@ div.desc {
 }
 
 .footer {
-    border: 3px solid white;
+    /*border: 3px solid white; */
     padding: 7px;
     position: absolute;
-    left: 450px;
-    top:100px;
-
-
-
-
-
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 
 }
+
+
+
+
+
+/* Trying ut second gallery on product page*/
