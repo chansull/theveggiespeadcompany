@@ -27,12 +27,14 @@ class Context {
 		$context['image'] = new \TimberImage( get_field( 'home_page_header_image' ) );
 		$context['about_heading'] = get_field( 'about_heading_' ) ;
 		$context['about_content'] = get_field( 'about_content' );
+		$context['hero'] = new \TimberImage( get_field( 'hero' ) );
 		$context['contact_headline_text'] = get_field( 'contact_headline_text' );
 		$context['image_blocks'] = new \TimberImage( get_field( 'image_blocks' ) );
 		$context['image'] = new \TimberImage( get_field( 'image' ) );
 		$context['image_two'] = new \TimberImage( get_field( 'image_two' ) );
 		$context['image_three'] = new \TimberImage( get_field( 'image_three' ) );
 		$context['contact_header_image'] = new \TimberImage( get_field( 'contact_header_image' ) );
+		$context['hero_product_image'] = new \TimberImage( get_field( 'hero_product_image' ) );
 		$context['product_gallery'] = new \TimberImage( get_field( 'product_gallery' ) );
 		$context['product_gallery_two'] = new \TimberImage( get_field( 'product_gallery_two' ) );
 		$context['product_gallery_three'] = new \TimberImage( get_field( 'product_gallery_three' ) );

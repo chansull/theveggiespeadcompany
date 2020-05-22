@@ -89,6 +89,10 @@
             <p>If it was critical to our application that a mathematical addition took place, then we would need to ensure both values were integers (this applies to any type). Specifically for integers, we could do something like<br/><code>intval($foo[0]) + intval($foo[1])</code> <button data-answer="answer4" class="show-answer">Show result</button></p>
             <p>The string equivalent of + is <strong>.</strong><br/><code>$foo[0].$foo[1]</code> <button data-answer="answer5" class="show-answer">Show result</button><br/>(or if we were going for nice text formatting) <code>$foo[0]." ".$foo[1]</code> <button data-answer="answer6" class="show-answer">Show result</button>
             <br/>So why does this work? Well, this time, PHP tries to convert the integer into a string, which it can do very easily <?= $a; ?> = "<?= $a; ?>".</p>
+			<h3>null</h3>
+			<p>Null is one of the least conceptually easy types that you'll come across; they are used to explicitly state that something <i>has no value</i>.<p>
+			<p>In other languages, the use of null relates to <i>garbage collection</i>, i.e. telling the operating system that the variable is no longer required and can be disposed from memory. It's not quite the same in PHP, but it provides another factor you can check against and allows a developer to strip a variable of its value whilst keeping the variable 'alive' for use in later code.</p>
+			<p>PHP has a built-in function which can check if something is of the null type: <code>is_null($some_variable);</code> which returns <i>true</i> when the value (and type) of a variable is null, and <i>false</i> otherwise.<p>
             <h3>Conclusion</h3>
             <p>If you're a front-end developer, most of this will never concern you. But it's still important to understand how PHP handles types. If you're interested in knowing more, I'll create a new section to discuss other cool things like <i>type-casting</i>.</p>
         <?php
