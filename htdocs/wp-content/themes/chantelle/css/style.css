@@ -7,6 +7,7 @@ body {
 }
 img {
     max-width: 100%;
+
 }
 
 .inner {
@@ -14,6 +15,40 @@ img {
     max-width: 100%;
     margin: 0 auto;
 }
+
+/* WP alignment */
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+.aligncenter, div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+a img.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+	margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* End WP alignment */
 
 /*header-image {
     width:1080px;
@@ -29,17 +64,19 @@ img {
   height: 400px;
   overflow: hidden;
 
-
-
 }
+
 /* Centered text */
 .tagline {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color:white;
 
 }
+
+/*grey overlay maybe? */
 .hero-container::before {
   content: '';
   position: absolute;
@@ -50,6 +87,7 @@ img {
   z-index: 1;
   background: rgba(0, 0, 0, .2);
   max-width: 100%;
+  height: 400px;
 }
 
 .header-image {
@@ -87,13 +125,14 @@ nav ul {
 .active {
     text-decoration: none;
     color: black;
+	padding: 0.5em;
 }
 
 nav ul li {
     text-decoration: none;
     border: 1px solid black;
     margin:0.5em;
-    padding: 0.5em;
+
 }
 
 nav {
@@ -106,6 +145,7 @@ nav {
     font-size: 50px;
     letter-spacing: 0.5em;
 }
+
 
 .tagline {
     text-align: center;
@@ -247,13 +287,7 @@ div.desc {
     height: 400px;
     overflow: hidden;
 }
-.tagline {
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 .about-heroimage {
     background-size: cover;
@@ -277,7 +311,6 @@ div.desc {
     max-width: 100%
     padding: 20px;
     text-align: center;
-    border: 2px solid salmon;
     border-radius: 25px;
     margin: 0 20px;
     padding: 5px;
@@ -288,6 +321,13 @@ div.desc {
     color:white;
     font-family: Quicksand;
     background-color: lightgray;
+}
+
+.about-banner-middle-image {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .aligncenter wp-image-68 size-large {
     max-width: 100%;
@@ -319,6 +359,40 @@ div.desc {
 .about-lines {
     display: block;
 
+}
+
+.thumbnail-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+
+}
+
+.thumbnail {
+	width: 20%;
+	height: auto;
+	padding-bottom: 1rem;
+
+}
+
+/*product page */
+
+.hero-container-products {
+    height: 400px;
+}
+
+
+.thumbnail {
+	width: 20%;
+}
+
+/* this is the pop out image of the gallery - the code centers the image and makes it 50% of original size */
+.full-product-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 1rem;
 }
 
 
@@ -398,20 +472,6 @@ div.desc {
     font-weight: bold;
     padding-bottom: 5px;
 }
-/*product page */
-
-.hero-container-products {
-    height: 400px;
-}
-
-.tagline {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-}
-
 
 /*footer */
 
@@ -434,9 +494,3 @@ div.desc {
     cursor: pointer;
 
 }
-
-
-
-
-
-/* Trying ut second gallery on product page*/

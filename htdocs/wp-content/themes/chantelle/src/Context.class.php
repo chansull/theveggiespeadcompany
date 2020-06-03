@@ -33,6 +33,8 @@ class Context {
 		$context['image'] = new \TimberImage( get_field( 'image' ) );
 		$context['image_two'] = new \TimberImage( get_field( 'image_two' ) );
 		$context['image_three'] = new \TimberImage( get_field( 'image_three' ) );
+		$context['banner_about_image'] = new \TimberImage( get_field( 'banner_about_image' ) );
+		$context['more_info_about'] = get_field( 'more_info_about' );
 		$context['contact_header_image'] = new \TimberImage( get_field( 'contact_header_image' ) );
 		$context['hero_product_image'] = new \TimberImage( get_field( 'hero_product_image' ) );
 		$context['product_gallery'] = new \TimberImage( get_field( 'product_gallery' ) );
