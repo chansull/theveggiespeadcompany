@@ -200,6 +200,8 @@ that have a width less or equal than 500px*/``
 }
 
 
+
+
 h2 {
 
     text-align: center;
@@ -265,19 +267,30 @@ h1 .best-sells {
 
 @media only screen and (min-width: 600px) {
 	.new-recipes {
-		background-color: blue;
+		background-color: darkseagreen;
 	}
 }
 
 .gallery-flavours-container {
+
 display: flex;
 flex-direction: row;
+flex-wrap:wrap;
 justify-content: space-evenly;
 /*width: 1080px; */
 padding-top: 50px;
-
-
 }
+
+.gallery-flavours {
+	width: 50%;
+}
+
+@media only screen and (min-width:800px) {
+	.gallery-flavours {
+		width:25%;
+	}
+}
+
 
 .gallery {
   margin: 5px;
@@ -396,14 +409,21 @@ div.desc {
 
 .thumbnail-container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: flex-start;
 }
 
 .thumbnail {
-	width: 20%;
+	width: 50%;
 	height: auto;
 	padding-bottom: 1rem;
+}
+
+@media only screen and (min-width:800px) {
+	.thumbnail {
+		width:20%;
+	}
 }
 
 .pirate-section {
@@ -431,9 +451,7 @@ div.desc {
 
 }
 
-.thumbnail {
-	width: 20%;
-}
+
 
 /* this is the pop out image of the gallery - the code centers the image and makes it 50% of original size */
 .full-product-image {
@@ -666,4 +684,23 @@ position: absolute;
 	opacity: .2;
 	background-color: green;
 	transition: background-color 2s, opacity 2s;
+}
+
+.product-menu-content {
+	display: none;
+}
+
+.product-menu-item.open .product-menu-content {
+	display: block;
+
+}
+
+.product-menu-title {
+	color: darkseagreen;
+	text-align: center;
+}
+
+.product-menu-content p {
+	text-align: center;
+	color: darksalmon;
 }

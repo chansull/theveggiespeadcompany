@@ -57,7 +57,22 @@ jQuery( function( $ ) {
 	} );
 });
 
+jQuery( function( $ ) {
+	$('.product-menu-title').on( 'click', function(){
+		//if the parent does have the class open
+		if($(this).parent().hasClass('open')){
 
+			//remove the class open
+			$(this).parent().removeClass('open');
+		} else {
+			//then add the class open
+			$(this).parent().addClass('open');
+
+		};
+
+
+	} );
+});
 
 
 
